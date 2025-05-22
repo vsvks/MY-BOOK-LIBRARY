@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> My Book Library</title>
+  <style>
+    body {
+      background-color: rgb(9, 182, 235);
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    input, button {
+      margin: 5px;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Book Library</h1>
+  <div>
+    <input id="author" placeholder="Author">
+    <input id="bookName" placeholder="Book Name">
+    <input id="issuedDate" placeholder="Issued Date (DD-MM-YYYY)">
+    <input id="genre" placeholder="Genre">
+    <input id="pages" placeholder="Pages" type="number">
+    <button onclick="fetchBooks()">Search</button>
+  </div>
+  <ul id="results"></ul>
+  <script src="script.js"></script>
+</body>
+</html>
